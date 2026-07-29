@@ -1,0 +1,101 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: #f6f8f7;
+  color: #1f2a24;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #14532d;
+  color: white;
+}
+.navbar a { color: white; text-decoration: none; margin-right: 1rem; }
+.brand { font-weight: 700; font-size: 1.25rem; }
+.nav-links { display: flex; align-items: center; }
+.nav-user { margin-right: 1rem; }
+.btn-link {
+  background: none; border: none; color: white; cursor: pointer;
+  font-size: 1rem; text-decoration: underline;
+}
+.btn-link.danger { color: #b91c1c; }
+
+.page { max-width: 900px; margin: 2rem auto; padding: 0 1.5rem; }
+.page-loading { text-align: center; margin-top: 4rem; color: #555; }
+.subtitle { color: #4b5563; }
+
+.home-hero { text-align: center; margin-top: 4rem; }
+.cta-button {
+  display: inline-block; margin-top: 1rem; padding: 0.75rem 1.5rem;
+  background: #14532d; color: white; border-radius: 8px; text-decoration: none;
+}
+
+.service-category { margin-top: 2rem; }
+.service-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1rem; }
+.service-card {
+  background: white; border-radius: 12px; padding: 1.25rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08); display: flex; flex-direction: column;
+}
+.service-card h3 { margin: 0 0 0.5rem; }
+.service-meta { display: flex; justify-content: space-between; margin: 0.75rem 0; color: #4b5563; font-size: 0.9rem; }
+.service-card button {
+  margin-top: auto; padding: 0.5rem; border: none; border-radius: 6px;
+  background: #14532d; color: white; cursor: pointer;
+}
+
+.slot-day-group { margin-top: 1rem; }
+.slot-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 0.75rem; }
+.slot-card {
+  background: white; border: 2px solid #e5e7eb; border-radius: 10px; padding: 0.75rem;
+  cursor: pointer; text-align: left;
+}
+.slot-card.selected { border-color: #14532d; background: #ecfdf3; }
+.slot-card.full { opacity: 0.5; cursor: not-allowed; }
+.slot-date { font-weight: 600; font-size: 0.9rem; }
+.slot-time { font-size: 0.85rem; margin: 0.25rem 0; }
+.slot-seats { font-size: 0.75rem; color: #6b7280; }
+
+.booking-panel {
+  margin-top: 1.5rem; background: white; padding: 1.25rem; border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+.payment-options { display: flex; gap: 1.5rem; margin: 0.75rem 0; }
+.booking-panel button {
+  padding: 0.6rem 1.25rem; background: #14532d; color: white; border: none;
+  border-radius: 6px; cursor: pointer;
+}
+
+.success-banner {
+  background: white; padding: 2rem; border-radius: 12px; text-align: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.auth-page { max-width: 400px; margin: 3rem auto; padding: 0 1.5rem; }
+.auth-form { display: flex; flex-direction: column; gap: 0.5rem; }
+.auth-form input {
+  padding: 0.6rem; border: 1px solid #d1d5db; border-radius: 6px; margin-bottom: 0.5rem;
+}
+.auth-form button {
+  padding: 0.7rem; background: #14532d; color: white; border: none;
+  border-radius: 6px; cursor: pointer; margin-top: 0.5rem;
+}
+
+.error-text { color: #b91c1c; margin: 0.5rem 0; }
+
+.booking-row {
+  display: flex; align-items: center; justify-content: space-between;
+  background: white; padding: 1rem; border-radius: 10px; margin-bottom: 0.75rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+.muted { color: #6b7280; font-size: 0.9rem; }
+.booking-tags { display: flex; gap: 0.5rem; }
+.tag {
+  font-size: 0.75rem; background: #f3f4f6; padding: 0.2rem 0.6rem; border-radius: 999px;
+  text-transform: capitalize;
+}
+.tag.status-cancelled { background: #fee2e2; color: #b91c1c; }
+.tag.status-confirmed { background: #dcfce7; color: #166534; }
